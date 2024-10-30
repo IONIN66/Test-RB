@@ -663,7 +663,6 @@ input{
         width: 80vw;
         max-height: 80vh;
         height: auto;
-
     }
 
     .modal__inputs{
@@ -712,13 +711,15 @@ input{
 
 @media (max-width: 430px) {
     .modal__content {
-        width: 80%;
-        height: 80%;
+        max-width: 500px;
+        width: 80vw;
+        max-height: 80vh;
+        height: auto;
     }
 
     #videoFrame{
         width: 100%;
-        height: 100%;
+        height: 100%
     }
 
 }
