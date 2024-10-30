@@ -1,14 +1,228 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/Test-RB/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-    <script type="module" crossorigin src="/Test-RB/assets/index-JtaAId_-.js"></script>
-    <link rel="stylesheet" crossorigin href="/Test-RB/assets/index-DRNMkqs8.css">
-  </head>
-  <body>
-    <div id="app"></div>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/Test-RB/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Vite App</title>
+      <script type="module" crossorigin src="/Test-RB/assets/index-C04PQ1X8.js"></script>
+      <link rel="stylesheet" crossorigin href="/Test-RB/assets/index-Bs3dNaRe.css">
+    </head>
+    <body>
+        <main>
+            <div class="container--one">
+                <div class="main-photo">
+                    <img 
+                        srcset="/images/mainPhoto-mobile-BwNkzcmj.svg 360w, /Test-RB/assets/mainPhoto-desktop-C9xgveJk.svg 1600w"
+                        src="/Test-RB/assets/mainPhoto-desktop-C9xgveJk.svg"     
+                        alt="Коробка конфет"
+                        class="main-photo__image">
+                    <button class="button--video" id="videoButton">
+                        <div class="button__content">
+                            <div class="button__text">Смотреть видео</div>
+                            <div class='button__vector'>
+                                <img src="data:image/svg+xml,%3csvg%20width='9.366943'%20height='11.700012'%20viewBox='0%200%209.36694%2011.7'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cdesc%3e%20Created%20with%20Pixso.%20%3c/desc%3e%3cdefs/%3e%3cpath%20id='Vector'%20d='M8.76%205.85L0.6%2011.1L0.6%200.6L8.76%205.85Z'%20stroke='%23FFFFFF'%20stroke-opacity='1.000000'%20stroke-width='1.200000'%20stroke-linejoin='round'/%3e%3c/svg%3e" alt="кнопка play">
+                            </div>
+                        </div> 
+                    </button>
+                </div>
+                <div id="videoModal" class="modal">
+                    <div class="modal__content">
+                        <iframe id="videoFrame" width="560" height="315" src="" allow="autoplay" allowfullscreen></iframe>
+                        <span class="modal__close">&times;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="container--two">
+                <div class="cards-board">
+                    <div class="card--peas">
+                        <div class="card__name">
+                            Горох в стручках, 1 кг
+                        </div>
+                        <div class="card__like-and-eye">
+                            <div class="card__like">
+                                <img src="data:image/svg+xml,%3csvg%20width='17.000000'%20height='15.000000'%20viewBox='0%200%2017%2015'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cdesc%3e%20Created%20with%20Pixso.%20%3c/desc%3e%3cdefs/%3e%3cpath%20id='Vector'%20d='M8.58%2012.71L8.5%2012.79L8.4%2012.71C4.36%209.18%201.69%206.85%201.69%204.49C1.69%202.86%202.97%201.63%204.67%201.63C5.98%201.63%207.25%202.45%207.7%203.56L9.29%203.56C9.74%202.45%2011.01%201.63%2012.32%201.63C14.02%201.63%2015.3%202.86%2015.3%204.49C15.3%206.85%2012.63%209.18%208.58%2012.71ZM12.32%200C10.84%200%209.42%200.66%208.5%201.7C7.57%200.66%206.15%200%204.67%200C2.05%200%200%201.97%200%204.49C0%207.57%202.88%2010.1%207.26%2013.92L8.5%2015L9.73%2013.92C14.1%2010.1%2017%207.57%2017%204.49C17%201.97%2014.94%200%2012.32%200Z'%20fill='%23FFFFFF'%20fill-opacity='1.000000'%20fill-rule='nonzero'/%3e%3c/svg%3e" alt="like" class="like-icon">
+                            </div>
+                            <div class="card__eye">
+                                <img src="data:image/svg+xml,%3csvg%20width='17.416748'%20height='11.875000'%20viewBox='0%200%2017.4167%2011.875'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cdesc%3e%20Created%20with%20Pixso.%20%3c/desc%3e%3cdefs/%3e%3cpath%20id='Vector'%20d='M8.7%203.56C9.33%203.56%209.94%203.81%2010.38%204.25C10.83%204.7%2011.08%205.3%2011.08%205.93C11.08%206.56%2010.83%207.17%2010.38%207.61C9.94%208.06%209.33%208.31%208.7%208.31C8.07%208.31%207.47%208.06%207.02%207.61C6.58%207.17%206.33%206.56%206.33%205.93C6.33%205.3%206.58%204.7%207.02%204.25C7.47%203.81%208.07%203.56%208.7%203.56ZM8.7%200C12.66%200%2016.04%202.46%2017.41%205.93C16.04%209.41%2012.66%2011.87%208.7%2011.87C4.75%2011.87%201.36%209.41%200%205.93C1.36%202.46%204.75%200%208.7%200ZM1.72%205.93C2.36%207.24%203.35%208.34%204.59%209.11C5.82%209.88%207.25%2010.29%208.7%2010.29C10.16%2010.29%2011.58%209.88%2012.82%209.11C14.05%208.34%2015.05%207.24%2015.69%205.93C15.05%204.63%2014.05%203.53%2012.82%202.76C11.58%201.99%2010.16%201.58%208.7%201.58C7.25%201.58%205.82%201.99%204.59%202.76C3.35%203.53%202.36%204.63%201.72%205.93Z'%20fill='%23FEFEFE'%20fill-opacity='1.000000'%20fill-rule='nonzero'/%3e%3c/svg%3e" alt="eye" class="eye-icon">
+                            </div>
+                        </div>
+                        <div class="card__description">
+                            <div class="card__description--peas-discount">- 29%</div>
+                            <div class="card__description--peas-offer">Товар дня</div>
+                        </div>
+                        <div class="card__price">
+                            <div>570 ₽</div>
+                            <button class="button--leave-request">Оставить заявку</button>
+                        </div>
+                    </div>
+                    <div class="green">
+                        <div class="card--blueberry">
+                            <div class="card__name">
+                                Голубика лесная, 200 г
+                            </div>
+                            <div class="card__like-and-eye">
+                                <div class="card__like">
+                                    <img src="data:image/svg+xml,%3csvg%20width='17.000000'%20height='15.000000'%20viewBox='0%200%2017%2015'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cdesc%3e%20Created%20with%20Pixso.%20%3c/desc%3e%3cdefs/%3e%3cpath%20id='Vector'%20d='M8.58%2012.71L8.5%2012.79L8.4%2012.71C4.36%209.18%201.69%206.85%201.69%204.49C1.69%202.86%202.97%201.63%204.67%201.63C5.98%201.63%207.25%202.45%207.7%203.56L9.29%203.56C9.74%202.45%2011.01%201.63%2012.32%201.63C14.02%201.63%2015.3%202.86%2015.3%204.49C15.3%206.85%2012.63%209.18%208.58%2012.71ZM12.32%200C10.84%200%209.42%200.66%208.5%201.7C7.57%200.66%206.15%200%204.67%200C2.05%200%200%201.97%200%204.49C0%207.57%202.88%2010.1%207.26%2013.92L8.5%2015L9.73%2013.92C14.1%2010.1%2017%207.57%2017%204.49C17%201.97%2014.94%200%2012.32%200Z'%20fill='%23FFFFFF'%20fill-opacity='1.000000'%20fill-rule='nonzero'/%3e%3c/svg%3e" alt="like" class="like-icon">
+                                </div>
+                                <div class="card__eye">
+                                    <img src="data:image/svg+xml,%3csvg%20width='17.416748'%20height='11.875000'%20viewBox='0%200%2017.4167%2011.875'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cdesc%3e%20Created%20with%20Pixso.%20%3c/desc%3e%3cdefs/%3e%3cpath%20id='Vector'%20d='M8.7%203.56C9.33%203.56%209.94%203.81%2010.38%204.25C10.83%204.7%2011.08%205.3%2011.08%205.93C11.08%206.56%2010.83%207.17%2010.38%207.61C9.94%208.06%209.33%208.31%208.7%208.31C8.07%208.31%207.47%208.06%207.02%207.61C6.58%207.17%206.33%206.56%206.33%205.93C6.33%205.3%206.58%204.7%207.02%204.25C7.47%203.81%208.07%203.56%208.7%203.56ZM8.7%200C12.66%200%2016.04%202.46%2017.41%205.93C16.04%209.41%2012.66%2011.87%208.7%2011.87C4.75%2011.87%201.36%209.41%200%205.93C1.36%202.46%204.75%200%208.7%200ZM1.72%205.93C2.36%207.24%203.35%208.34%204.59%209.11C5.82%209.88%207.25%2010.29%208.7%2010.29C10.16%2010.29%2011.58%209.88%2012.82%209.11C14.05%208.34%2015.05%207.24%2015.69%205.93C15.05%204.63%2014.05%203.53%2012.82%202.76C11.58%201.99%2010.16%201.58%208.7%201.58C7.25%201.58%205.82%201.99%204.59%202.76C3.35%203.53%202.36%204.63%201.72%205.93Z'%20fill='%23FEFEFE'%20fill-opacity='1.000000'%20fill-rule='nonzero'/%3e%3c/svg%3e" alt="eye" class="eye-icon">
+                                </div>
+                            </div>
+                            <div class="card__description">
+                                <div class="card__description--blueberry-discount">- 31%</div>
+                                <div class="card__description--blueberry-offer">Распродажа</div>
+                            </div>
+                            <div class="card__price">
+                                <div>140 ₽</div>
+                                <button class="button--leave-request">Оставить заявку</button>
+                            </div>
+                        </div>
+                        <div class="card--carrot">
+                            <div class="card__name">
+                                Морковь мытая, 1 кг
+                            </div>
+                            <div class="card__like-and-eye">
+                                <div class="card__like">
+                                    <img src="data:image/svg+xml,%3csvg%20width='17.000000'%20height='15.000000'%20viewBox='0%200%2017%2015'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cdesc%3e%20Created%20with%20Pixso.%20%3c/desc%3e%3cdefs/%3e%3cpath%20id='Vector'%20d='M8.58%2012.71L8.5%2012.79L8.4%2012.71C4.36%209.18%201.69%206.85%201.69%204.49C1.69%202.86%202.97%201.63%204.67%201.63C5.98%201.63%207.25%202.45%207.7%203.56L9.29%203.56C9.74%202.45%2011.01%201.63%2012.32%201.63C14.02%201.63%2015.3%202.86%2015.3%204.49C15.3%206.85%2012.63%209.18%208.58%2012.71ZM12.32%200C10.84%200%209.42%200.66%208.5%201.7C7.57%200.66%206.15%200%204.67%200C2.05%200%200%201.97%200%204.49C0%207.57%202.88%2010.1%207.26%2013.92L8.5%2015L9.73%2013.92C14.1%2010.1%2017%207.57%2017%204.49C17%201.97%2014.94%200%2012.32%200Z'%20fill='%23FFFFFF'%20fill-opacity='1.000000'%20fill-rule='nonzero'/%3e%3c/svg%3e" alt="like" class="like-icon">
+                                </div>
+                                <div class="card__eye">
+                                    <img src="data:image/svg+xml,%3csvg%20width='17.416748'%20height='11.875000'%20viewBox='0%200%2017.4167%2011.875'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cdesc%3e%20Created%20with%20Pixso.%20%3c/desc%3e%3cdefs/%3e%3cpath%20id='Vector'%20d='M8.7%203.56C9.33%203.56%209.94%203.81%2010.38%204.25C10.83%204.7%2011.08%205.3%2011.08%205.93C11.08%206.56%2010.83%207.17%2010.38%207.61C9.94%208.06%209.33%208.31%208.7%208.31C8.07%208.31%207.47%208.06%207.02%207.61C6.58%207.17%206.33%206.56%206.33%205.93C6.33%205.3%206.58%204.7%207.02%204.25C7.47%203.81%208.07%203.56%208.7%203.56ZM8.7%200C12.66%200%2016.04%202.46%2017.41%205.93C16.04%209.41%2012.66%2011.87%208.7%2011.87C4.75%2011.87%201.36%209.41%200%205.93C1.36%202.46%204.75%200%208.7%200ZM1.72%205.93C2.36%207.24%203.35%208.34%204.59%209.11C5.82%209.88%207.25%2010.29%208.7%2010.29C10.16%2010.29%2011.58%209.88%2012.82%209.11C14.05%208.34%2015.05%207.24%2015.69%205.93C15.05%204.63%2014.05%203.53%2012.82%202.76C11.58%201.99%2010.16%201.58%208.7%201.58C7.25%201.58%205.82%201.99%204.59%202.76C3.35%203.53%202.36%204.63%201.72%205.93Z'%20fill='%23FEFEFE'%20fill-opacity='1.000000'%20fill-rule='nonzero'/%3e%3c/svg%3e" alt="eye" class="eye-icon">
+                                </div>
+                            </div>
+                            <div class="card__description">
+                                <div class="card__description--carrot-offer">Хит</div>
+                            </div>
+                            <div class="card__price">
+                                <div>140 ₽</div>
+                                <button class="button--leave-request">Оставить заявку</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sweety">
+                        <div class="card--popcorn">
+                            <div class="card--popcorn__image">
+                                <div class="card__like-and-eye">
+                                    <div class="card__like">
+                                        <img src="data:image/svg+xml,%3csvg%20width='17.000000'%20height='15.000000'%20viewBox='0%200%2017%2015'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cdesc%3e%20Created%20with%20Pixso.%20%3c/desc%3e%3cdefs/%3e%3cpath%20id='Vector'%20d='M8.58%2012.71L8.5%2012.79L8.4%2012.71C4.36%209.18%201.69%206.85%201.69%204.49C1.69%202.86%202.97%201.63%204.67%201.63C5.98%201.63%207.25%202.45%207.7%203.56L9.29%203.56C9.74%202.45%2011.01%201.63%2012.32%201.63C14.02%201.63%2015.3%202.86%2015.3%204.49C15.3%206.85%2012.63%209.18%208.58%2012.71ZM12.32%200C10.84%200%209.42%200.66%208.5%201.7C7.57%200.66%206.15%200%204.67%200C2.05%200%200%201.97%200%204.49C0%207.57%202.88%2010.1%207.26%2013.92L8.5%2015L9.73%2013.92C14.1%2010.1%2017%207.57%2017%204.49C17%201.97%2014.94%200%2012.32%200Z'%20fill='%23FFFFFF'%20fill-opacity='1.000000'%20fill-rule='nonzero'/%3e%3c/svg%3e" alt="like" class="like-icon">
+                                    </div>
+                                    <div class="card__eye">
+                                        <img src="data:image/svg+xml,%3csvg%20width='17.416748'%20height='11.875000'%20viewBox='0%200%2017.4167%2011.875'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cdesc%3e%20Created%20with%20Pixso.%20%3c/desc%3e%3cdefs/%3e%3cpath%20id='Vector'%20d='M8.7%203.56C9.33%203.56%209.94%203.81%2010.38%204.25C10.83%204.7%2011.08%205.3%2011.08%205.93C11.08%206.56%2010.83%207.17%2010.38%207.61C9.94%208.06%209.33%208.31%208.7%208.31C8.07%208.31%207.47%208.06%207.02%207.61C6.58%207.17%206.33%206.56%206.33%205.93C6.33%205.3%206.58%204.7%207.02%204.25C7.47%203.81%208.07%203.56%208.7%203.56ZM8.7%200C12.66%200%2016.04%202.46%2017.41%205.93C16.04%209.41%2012.66%2011.87%208.7%2011.87C4.75%2011.87%201.36%209.41%200%205.93C1.36%202.46%204.75%200%208.7%200ZM1.72%205.93C2.36%207.24%203.35%208.34%204.59%209.11C5.82%209.88%207.25%2010.29%208.7%2010.29C10.16%2010.29%2011.58%209.88%2012.82%209.11C14.05%208.34%2015.05%207.24%2015.69%205.93C15.05%204.63%2014.05%203.53%2012.82%202.76C11.58%201.99%2010.16%201.58%208.7%201.58C7.25%201.58%205.82%201.99%204.59%202.76C3.35%203.53%202.36%204.63%201.72%205.93Z'%20fill='%23FEFEFE'%20fill-opacity='1.000000'%20fill-rule='nonzero'/%3e%3c/svg%3e" alt="eye" class="eye-icon">
+                                    </div>
+                                </div>
+                                <div class="card__description">
+                                    <div class="card__description--popcorn-offer">Товар дня</div>
+                                    <div class="card__description--popcorn-discount">- 29%</div>
+                                </div>  
+                            </div>
+                            <div class="card__details">
+                                <div>Попкорн солёный, для СВЧ-печи, 120 г</div>
+                                <div>160 ₽</div>
+                                <button class="button--leave-request">Оставить заявку</button>
+                            </div>
+                        </div>
+                        <div class="card--iceCream">
+                            <div class="card--iceCream__image">
+                                <div class="card__like-and-eye">
+                                    <div class="card__like">
+                                        <img src="data:image/svg+xml,%3csvg%20width='17.000000'%20height='15.000000'%20viewBox='0%200%2017%2015'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cdesc%3e%20Created%20with%20Pixso.%20%3c/desc%3e%3cdefs/%3e%3cpath%20id='Vector'%20d='M8.58%2012.71L8.5%2012.79L8.4%2012.71C4.36%209.18%201.69%206.85%201.69%204.49C1.69%202.86%202.97%201.63%204.67%201.63C5.98%201.63%207.25%202.45%207.7%203.56L9.29%203.56C9.74%202.45%2011.01%201.63%2012.32%201.63C14.02%201.63%2015.3%202.86%2015.3%204.49C15.3%206.85%2012.63%209.18%208.58%2012.71ZM12.32%200C10.84%200%209.42%200.66%208.5%201.7C7.57%200.66%206.15%200%204.67%200C2.05%200%200%201.97%200%204.49C0%207.57%202.88%2010.1%207.26%2013.92L8.5%2015L9.73%2013.92C14.1%2010.1%2017%207.57%2017%204.49C17%201.97%2014.94%200%2012.32%200Z'%20fill='%23FFFFFF'%20fill-opacity='1.000000'%20fill-rule='nonzero'/%3e%3c/svg%3e" alt="like" class="like-icon">
+                                    </div>
+                                    <div>
+                                        <img src="data:image/svg+xml,%3csvg%20width='17.416748'%20height='11.875000'%20viewBox='0%200%2017.4167%2011.875'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cdesc%3e%20Created%20with%20Pixso.%20%3c/desc%3e%3cdefs/%3e%3cpath%20id='Vector'%20d='M8.7%203.56C9.33%203.56%209.94%203.81%2010.38%204.25C10.83%204.7%2011.08%205.3%2011.08%205.93C11.08%206.56%2010.83%207.17%2010.38%207.61C9.94%208.06%209.33%208.31%208.7%208.31C8.07%208.31%207.47%208.06%207.02%207.61C6.58%207.17%206.33%206.56%206.33%205.93C6.33%205.3%206.58%204.7%207.02%204.25C7.47%203.81%208.07%203.56%208.7%203.56ZM8.7%200C12.66%200%2016.04%202.46%2017.41%205.93C16.04%209.41%2012.66%2011.87%208.7%2011.87C4.75%2011.87%201.36%209.41%200%205.93C1.36%202.46%204.75%200%208.7%200ZM1.72%205.93C2.36%207.24%203.35%208.34%204.59%209.11C5.82%209.88%207.25%2010.29%208.7%2010.29C10.16%2010.29%2011.58%209.88%2012.82%209.11C14.05%208.34%2015.05%207.24%2015.69%205.93C15.05%204.63%2014.05%203.53%2012.82%202.76C11.58%201.99%2010.16%201.58%208.7%201.58C7.25%201.58%205.82%201.99%204.59%202.76C3.35%203.53%202.36%204.63%201.72%205.93Z'%20fill='%23FEFEFE'%20fill-opacity='1.000000'%20fill-rule='nonzero'/%3e%3c/svg%3e" alt="eye" class="eye-icon">
+                                    </div>
+                                </div>
+                                <div class="card__description">
+                                    <div class="card__description--iceCream-offer">Хит</div>
+                                </div>  
+                            </div>
+                            <div class="card__details">
+                                <div>Эскимо с малиной, 150 г</div>
+                                <div>190 ₽</div>
+                                <button class="button--leave-request">Оставить заявку</button>
+                            </div>        
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <div class="slider__list">
+                            <div class="slider-track">
+                                <div class="slide card--popcorn">
+                                    <div class="card--popcorn__image">
+                                        <div class="card__like-and-eye">
+                                            <div class="card__like">
+                                                <img src="data:image/svg+xml,%3csvg%20width='17.000000'%20height='15.000000'%20viewBox='0%200%2017%2015'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cdesc%3e%20Created%20with%20Pixso.%20%3c/desc%3e%3cdefs/%3e%3cpath%20id='Vector'%20d='M8.58%2012.71L8.5%2012.79L8.4%2012.71C4.36%209.18%201.69%206.85%201.69%204.49C1.69%202.86%202.97%201.63%204.67%201.63C5.98%201.63%207.25%202.45%207.7%203.56L9.29%203.56C9.74%202.45%2011.01%201.63%2012.32%201.63C14.02%201.63%2015.3%202.86%2015.3%204.49C15.3%206.85%2012.63%209.18%208.58%2012.71ZM12.32%200C10.84%200%209.42%200.66%208.5%201.7C7.57%200.66%206.15%200%204.67%200C2.05%200%200%201.97%200%204.49C0%207.57%202.88%2010.1%207.26%2013.92L8.5%2015L9.73%2013.92C14.1%2010.1%2017%207.57%2017%204.49C17%201.97%2014.94%200%2012.32%200Z'%20fill='%23FFFFFF'%20fill-opacity='1.000000'%20fill-rule='nonzero'/%3e%3c/svg%3e" alt="like" class="like-icon">
+                                            </div>
+                                            <div>
+                                                <img src="data:image/svg+xml,%3csvg%20width='17.416748'%20height='11.875000'%20viewBox='0%200%2017.4167%2011.875'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cdesc%3e%20Created%20with%20Pixso.%20%3c/desc%3e%3cdefs/%3e%3cpath%20id='Vector'%20d='M8.7%203.56C9.33%203.56%209.94%203.81%2010.38%204.25C10.83%204.7%2011.08%205.3%2011.08%205.93C11.08%206.56%2010.83%207.17%2010.38%207.61C9.94%208.06%209.33%208.31%208.7%208.31C8.07%208.31%207.47%208.06%207.02%207.61C6.58%207.17%206.33%206.56%206.33%205.93C6.33%205.3%206.58%204.7%207.02%204.25C7.47%203.81%208.07%203.56%208.7%203.56ZM8.7%200C12.66%200%2016.04%202.46%2017.41%205.93C16.04%209.41%2012.66%2011.87%208.7%2011.87C4.75%2011.87%201.36%209.41%200%205.93C1.36%202.46%204.75%200%208.7%200ZM1.72%205.93C2.36%207.24%203.35%208.34%204.59%209.11C5.82%209.88%207.25%2010.29%208.7%2010.29C10.16%2010.29%2011.58%209.88%2012.82%209.11C14.05%208.34%2015.05%207.24%2015.69%205.93C15.05%204.63%2014.05%203.53%2012.82%202.76C11.58%201.99%2010.16%201.58%208.7%201.58C7.25%201.58%205.82%201.99%204.59%202.76C3.35%203.53%202.36%204.63%201.72%205.93Z'%20fill='%23FEFEFE'%20fill-opacity='1.000000'%20fill-rule='nonzero'/%3e%3c/svg%3e" alt="eye" class="eye-icon">
+                                            </div>
+                                        </div>
+                                        <div class="card__description">
+                                            <div class="card__description--popcorn-offer">Товар дня</div>
+                                            <div class="card__description--popcorn-discount">- 29%</div>
+                                        </div>  
+                                    </div>
+                                    <div class="card__details">
+                                        <div>Попкорн солёный, для СВЧ-печи, 120 г</div>
+                                        <div>160 ₽</div>
+                                        <button class="button--leave-request">Оставить заявку</button>
+                                    </div>
+                                </div>
+                                <div class="slide card--iceCream blur" id="slide card--iceCream">
+      
+                                    <div class="card--iceCream__image">
+                                        <div class="card__like-and-eye">
+                                            <div class="card__like">
+                                                <img src="data:image/svg+xml,%3csvg%20width='17.000000'%20height='15.000000'%20viewBox='0%200%2017%2015'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cdesc%3e%20Created%20with%20Pixso.%20%3c/desc%3e%3cdefs/%3e%3cpath%20id='Vector'%20d='M8.58%2012.71L8.5%2012.79L8.4%2012.71C4.36%209.18%201.69%206.85%201.69%204.49C1.69%202.86%202.97%201.63%204.67%201.63C5.98%201.63%207.25%202.45%207.7%203.56L9.29%203.56C9.74%202.45%2011.01%201.63%2012.32%201.63C14.02%201.63%2015.3%202.86%2015.3%204.49C15.3%206.85%2012.63%209.18%208.58%2012.71ZM12.32%200C10.84%200%209.42%200.66%208.5%201.7C7.57%200.66%206.15%200%204.67%200C2.05%200%200%201.97%200%204.49C0%207.57%202.88%2010.1%207.26%2013.92L8.5%2015L9.73%2013.92C14.1%2010.1%2017%207.57%2017%204.49C17%201.97%2014.94%200%2012.32%200Z'%20fill='%23FFFFFF'%20fill-opacity='1.000000'%20fill-rule='nonzero'/%3e%3c/svg%3e" alt="like" class="like-icon">
+                                            </div>
+                                            <div class="card__eye">
+                                                <img src="data:image/svg+xml,%3csvg%20width='17.416748'%20height='11.875000'%20viewBox='0%200%2017.4167%2011.875'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cdesc%3e%20Created%20with%20Pixso.%20%3c/desc%3e%3cdefs/%3e%3cpath%20id='Vector'%20d='M8.7%203.56C9.33%203.56%209.94%203.81%2010.38%204.25C10.83%204.7%2011.08%205.3%2011.08%205.93C11.08%206.56%2010.83%207.17%2010.38%207.61C9.94%208.06%209.33%208.31%208.7%208.31C8.07%208.31%207.47%208.06%207.02%207.61C6.58%207.17%206.33%206.56%206.33%205.93C6.33%205.3%206.58%204.7%207.02%204.25C7.47%203.81%208.07%203.56%208.7%203.56ZM8.7%200C12.66%200%2016.04%202.46%2017.41%205.93C16.04%209.41%2012.66%2011.87%208.7%2011.87C4.75%2011.87%201.36%209.41%200%205.93C1.36%202.46%204.75%200%208.7%200ZM1.72%205.93C2.36%207.24%203.35%208.34%204.59%209.11C5.82%209.88%207.25%2010.29%208.7%2010.29C10.16%2010.29%2011.58%209.88%2012.82%209.11C14.05%208.34%2015.05%207.24%2015.69%205.93C15.05%204.63%2014.05%203.53%2012.82%202.76C11.58%201.99%2010.16%201.58%208.7%201.58C7.25%201.58%205.82%201.99%204.59%202.76C3.35%203.53%202.36%204.63%201.72%205.93Z'%20fill='%23FEFEFE'%20fill-opacity='1.000000'%20fill-rule='nonzero'/%3e%3c/svg%3e" alt="eye" class="eye-icon">
+                                            </div>
+                                        </div>
+                                        <div class="card__description">
+                                            <div class="card__description--iceCream-offer">Хит</div>
+                                        </div>  
+                                    </div>
+                                    <div class="card__details">
+                                        <div>Эскимо с малиной, 150 г</div>
+                                        <div>190 ₽</div>
+                                        <button class="button--leave-request">Оставить заявку</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-arrows">
+                                <button type="button" class="slider__arrow--prev disabled" >&bull;</button>
+                                <button type="button" class="slider__arrow--next">&bull;</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='modal' id="modal">
+                <form action="" class="modal__form">
+                    <div class="modal__header">
+                        <div>Оставить заявку</div>
+                        <button class="modal__button-close" id="modal__button__close">
+                            <img src="data:image/svg+xml,%3csvg%20width='20.000000'%20height='20.000000'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cdesc%3e%20Created%20with%20Pixso.%20%3c/desc%3e%3cdefs%3e%3cclipPath%20id='clip3_1455'%3e%3crect%20id='x'%20rx='-0.500000'%20width='19.000000'%20height='19.000000'%20transform='translate(0.500000%200.500000)'%20fill='white'%20fill-opacity='0'/%3e%3c/clipPath%3e%3c/defs%3e%3crect%20id='x'%20rx='-0.500000'%20width='19.000000'%20height='19.000000'%20transform='translate(0.500000%200.500000)'%20fill='%23FFFFFF'%20fill-opacity='0'/%3e%3cg%20clip-path='url(%23clip3_1455)'%3e%3cpath%20id='Vector'%20d='M15%205L5%2015'%20stroke='%23444444'%20stroke-opacity='1.000000'%20stroke-width='2.000000'%20stroke-linejoin='round'%20stroke-linecap='round'/%3e%3cpath%20id='Vector'%20d='M5%205L15%2015'%20stroke='%23444444'%20stroke-opacity='1.000000'%20stroke-width='2.000000'%20stroke-linejoin='round'%20stroke-linecap='round'/%3e%3c/g%3e%3c/svg%3e" alt="cross">
+                        </button>
+                    </div>
+                    <div class="modal__inputs" id="modal_inputs">
+                        <div class="modal__input">
+                            <input type="text" placeholder="Ваше имя *" id="name">
+                            <span class="modal__error-input">Поле не заполнено</span>
+                        </div>
+                        <div class="modal__input">
+                            <input type="text" placeholder="Номер телефона *" id="phone">
+                            <span class="modal__error-input">Поле не заполнено</span>
+                        </div>
+                    </div>
+                    <div class="modal__submit">
+                        <div class="modal__checkbox">
+                            <input type="checkbox" class="modal__checkbox-input">
+                            <label for="" class="modal__checkbox-label">Я соглашаюсь на обработку персональных данных</label>
+                        </div>
+                        <button type="submit" class="button--modal-submit">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </body>
 </html>
