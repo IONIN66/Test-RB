@@ -28,7 +28,7 @@ main{
     }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 430px) {
     main {
         max-width: 360px;
     }
@@ -150,7 +150,7 @@ main{
     }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 430px) {
 
     .container--one{
         max-width: 360px;
@@ -437,7 +437,7 @@ main{
 
 }
 
-@media (max-width: 420px) {
+@media (max-width: 430px) {
 
     .sweety{
         display: none;
@@ -657,10 +657,13 @@ input{
     cursor: pointer;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 430px) {
     .modal__form {
-        width: 80%;
-        height: 80%;
+        max-width: 500px;
+        width: 80vw;
+        max-height: 80vh;
+        height: auto;
+
     }
 
     .modal__inputs{
@@ -679,7 +682,7 @@ input{
     }
 
     .modal__checkbox{
-        gap: 40px;
+        gap: 20px;
     }
 
     .modal__checkbox-input{
@@ -707,7 +710,7 @@ input{
     right: 6px;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 430px) {
     .modal__content {
         width: 80%;
         height: 80%;
