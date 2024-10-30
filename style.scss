@@ -28,7 +28,7 @@ main{
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 420px) {
     main {
         max-width: 360px;
     }
@@ -150,7 +150,7 @@ main{
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 420px) {
 
     .container--one{
         max-width: 360px;
@@ -303,6 +303,7 @@ main{
     @include mixins.flexCenter;
     gap: 20px;
     height: 328px;
+    order: 1;
 }
 
 .card--popcorn{
@@ -436,7 +437,7 @@ main{
 
 }
 
-@media (max-width: 360px) {
+@media (max-width: 420px) {
 
     .sweety{
         display: none;
@@ -657,7 +658,7 @@ input{
     cursor: pointer;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 420px) {
     .modal__form {
         width: 80%;
         height: 80%;
@@ -707,7 +708,7 @@ input{
     right: 6px;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 420px) {
     .modal__content {
         width: 80%;
         height: 80%;
