@@ -13,11 +13,13 @@ body{
     background-color: variables.$background-main-one;
     font-family: variables.$Inter;
     color: variables.$total-white;
+    padding: 10px;
 }
 
 main{
     @include mixins.flexCenter;
-    width: 1440px;
+    max-width: 1440px;
+    width: 100vw;
     position: relative;
     flex-direction: column;
 }
@@ -25,10 +27,11 @@ main{
 @media (max-width: 1024px) {
     main {
         max-width: 1024px;
+        width: 100vw;
     }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 599px) {
     main {
         max-width: 360px;
     }
@@ -40,10 +43,10 @@ main{
 
 /* main-photo */
 
-.container--one{
+.container--one {
     @include mixins.flexCenter;
     width: 100%;
-    height: 645px;
+    height: auto;
     position: relative;
     flex-direction: column;
     background-color: variables.$total-white;
@@ -52,13 +55,15 @@ main{
 .main-photo{
     @include mixins.flexCenter;
     max-width: 1400px;
-    height: 517px;
+    width: 100vw;
+    height: auto;
+    padding: 64px 120px;
 }
 
 .main-photo__image{
     object-fit: cover;
     width: 100%;
-    height: 517px;
+    height: auto;
 }
 
 .button--video {
@@ -132,25 +137,24 @@ main{
 @media (max-width: 1024px) {
 
     .container--one{
-        width: variables.$tablet-breakpoint;
-        height: 465px;
         position: relative;
         flex-direction: column;
     }
 
     .main-photo{
-        max-width: 784px;
-        height: 337px;
+        padding: 64px 120px;
+        max-width: 100%;
     }
 
     .main-photo__image{
         object-fit: cover;
+        max-width: 784px;
         width: 100%;
         height: 100%;
     }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 599px) {
 
     .container--one{
         max-width: 360px;
@@ -160,13 +164,14 @@ main{
     }
 
     .main-photo{
-        max-width: 328px;
-        height: 204px;
+        padding: 48px 16px;
+        height: 100%
     }
 
     .main-photo__image{
         object-fit: cover;
-        max-width: 100%;
+        // max-width: 328px;
+        // width: 100%;
     }
 }
 
@@ -437,7 +442,7 @@ main{
 
 }
 
-@media (max-width: 430px) {
+@media (max-width: 599px) {
 
     .sweety{
         display: none;
@@ -658,7 +663,7 @@ input{
     cursor: pointer;
 }
 
-@media (max-width: 430px) {
+@media (max-width: 599px) {
     .modal__form {
         max-width: 500px;
         width: 80vw;
@@ -710,7 +715,7 @@ input{
     right: 6px;
 }
 
-@media (max-width: 430px) {
+@media (max-width: 599px) {
     .modal__content {
         max-width: 500px;
         width: 80vw;
