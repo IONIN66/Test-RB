@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
-        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/svg+xml" href="/vite.svg">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Vite App</title>
         <link rel="stylesheet" href="/style.scss">
     </head>
@@ -15,19 +15,20 @@
                         srcset="/images/mainPhoto-mobile.svg 420w, /images/mainPhoto-desktop.svg 1600w"
                         src="/images//mainPhoto-desktop.svg"     
                         alt="Коробка конфет"
-                        class="main-photo__image">
+                        class="main-photo__image"
+                        sizes="(max-width: 420px) 420px, 1600px">
                     <button class="button--video" id="videoButton">
-                        <div class="button__content">
-                            <div class="button__text">Смотреть видео</div>
-                            <div class='button__vector'>
+                        <span class="button__content">
+                            <span class="button__text">Смотреть видео</span>
+                            <span class='button__vector'>
                                 <img src="data:image/svg+xml,%3csvg%20width='9.366943'%20height='11.700012'%20viewBox='0%200%209.36694%2011.7'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cdesc%3e%20Created%20with%20Pixso.%20%3c/desc%3e%3cdefs/%3e%3cpath%20id='Vector'%20d='M8.76%205.85L0.6%2011.1L0.6%200.6L8.76%205.85Z'%20stroke='%23FFFFFF'%20stroke-opacity='1.000000'%20stroke-width='1.200000'%20stroke-linejoin='round'/%3e%3c/svg%3e" alt="кнопка play">
-                            </div>
-                        </div> 
+                            </span>
+                        </span> 
                     </button>
                 </div>
                 <div id="videoModal" class="modal">
                     <div class="modal__content">
-                        <iframe id="videoFrame" width="560" height="315" src="" allow="autoplay" allowfullscreen></iframe>
+                        <iframe id="videoFrame" width="560" height="315" allow="autoplay" allowfullscreen></iframe>
                         <span class="modal__close">&times;</span>
                     </div>
                 </div>
@@ -165,8 +166,7 @@
                                         <button class="button--leave-request">Оставить заявку</button>
                                     </div>
                                 </div>
-                                <div class="slide card--iceCream blur" id="slide card--iceCream">
-      
+                                <div class="slide card--iceCream blur" id="card--iceCream">
                                     <div class="card--iceCream__image">
                                         <div class="card__like-and-eye">
                                             <div class="card__like">
@@ -196,7 +196,7 @@
                 </div>
             </div>
             <div class='modal' id="modal">
-                <form action="" class="modal__form">
+                <form class="modal__form">
                     <div class="modal__header">
                         <div>Оставить заявку</div>
                         <button class="modal__button-close" id="modal__button__close">
@@ -216,7 +216,7 @@
                     <div class="modal__submit">
                         <div class="modal__checkbox">
                             <input type="checkbox" class="modal__checkbox-input">
-                            <label for="" class="modal__checkbox-label">Я соглашаюсь на обработку персональных данных</label>
+                            <label class="modal__checkbox-label">Я соглашаюсь на обработку персональных данных</label>
                         </div>
                         <button type="submit" class="button--modal-submit">Отправить</button>
                     </div>
